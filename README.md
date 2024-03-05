@@ -1,4 +1,4 @@
-We nade a simple student information system a web page for students to submit their information, with a table displaying relevant data and a dropdown for selecting final grades.
+We made a simple student information system a web page for students to submit their information, with a table displaying relevant data and a dropdown for selecting final grades.
 
 Below is a brief explanation of each of the html files:
 
