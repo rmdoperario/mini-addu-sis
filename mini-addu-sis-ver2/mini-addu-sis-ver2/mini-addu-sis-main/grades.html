@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY GRADES | STUDENT INFORMATION SYSTEM</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header style="background-color: #3b5998;" class="shadow-md p-2">
+      <div class="container mx-auto flex items-center justify-between">
+          <div class="flex items-center">
+              <img src="addu.png" alt="Logo" class="h-16 w-16 mr-4">
+              <div class="flex flex-col">
+                  <h1 class="text-2xl text-white font">STUDENT INFORMATION SYSTEM</h1>
+                  <p class="text-sm text-gray-400 mt-0">ATENEO DE DAVAO UNIVERSITY</p>
+              </div>
+            </div>
+            <nav role="navigation">
+                <ul class="flex space-x-4">
+                    <li><a href="./enrollment.html" class="text-white hover:text-blue-700">MY ENROLLMENT</a></li>
+                    <li><a href="./grades.html" class="text-white hover:text-blue-700">MY GRADES</a></li>
+                    <li><a href="./submit.html" class="text-white hover:text-blue-700">MY SUBMISSION</a></li>
+                    <li><a href="./list.html" class="text-white hover:text-blue-700">CLASS LIST</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <script src="grades.js"></script>
+<script>
+    document.body.innerHTML += createGradesTable();
+</script>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
