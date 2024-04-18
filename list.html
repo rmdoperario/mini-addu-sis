@@ -3,42 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY LIST | STUDENT INFORMATION SYSTEM</title>
-    <link rel="stylesheet" href="./CSS Files/style.css"/>
-</head>
-<body>
-    <header>
-        <div>
-            <nav role="navigation">
-                <ul>
-                    <li><a href="./enrollment.html">MY ENROLLMENT</a></li>
-                    <li><a href="./grades.html">MY GRADES</a></li>
-                    <li><a href="./submit.html">MY SUBMISSION</a></li>
-                    <li><a href="./list.html">CLASS LIST</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <title>CLASS LIST | STUDENT INFORMATION SYSTEM</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"></head>
+    <body class="bg-gray-100">
+        <header style="background-color: #3b5998;" class="shadow-md p-2">
+          <div class="container mx-auto flex items-center justify-between">
+              <div class="flex items-center">
+                  <img src="addu.png" alt="Logo" class="h-16 w-16 mr-4">
+                  <div class="flex flex-col">
+                      <h1 class="text-2xl text-white font">STUDENT INFORMATION SYSTEM</h1>
+                      <p class="text-sm text-gray-400 mt-0">ATENEO DE DAVAO UNIVERSITY</p>
+                  </div>
+                </div>
+                <nav role="navigation">
+                    <ul class="flex space-x-4">
+                        <li><a href="./enrollment.html" class="text-white hover:text-blue-700">MY ENROLLMENT</a></li>
+                        <li><a href="./grades.html" class="text-white hover:text-blue-700">MY GRADES</a></li>
+                        <li><a href="./submit.html" class="text-white hover:text-blue-700">MY SUBMISSION</a></li>
+                        <li><a href="./list.html" class="text-white hover:text-blue-700">CLASS LIST</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    <table id="table">
-        <tr>
-          <th>Course code</th>
-          <th>Course Name</th>
-          <th>Number of slots</th>
-          <th>Number of slots remained</th>
-          <th>Start Time</th>
-          <th>End Time</th>
-          <th>Days</th>
-        </tr>
-  
-        <tr>
-          <td>IT 2241</td>
-          <td>Event Driven Programming</td>
-          <td>40</td>
-          <td>15</td>
-          <td>2:05PM</td>
-          <td>4:35PM</td>
-          <td>Tth</td>
-          </tr>
-      </table>  
+        <script src="list.js"></script>
+        <script>
+            document.body.innerHTML += createCourseTable();
+        </script>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
+</html>

@@ -3,56 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY SUBMIT | STUDENT INFORMATION SYSTEM</title>
-    <link rel="stylesheet" href="./CSS Files/style.css"/>
+    <title>MY SUBMISSION | STUDENT INFORMATION SYSTEM</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <div>
+<body class="bg-gray-100">
+    <header style="background-color: #3b5998;" class="shadow-md p-2">
+      <div class="container mx-auto flex items-center justify-between">
+          <div class="flex items-center">
+              <img src="addu.png" alt="Logo" class="h-16 w-16 mr-4">
+              <div class="flex flex-col">
+                  <h1 class="text-2xl text-white font">STUDENT INFORMATION SYSTEM</h1>
+                  <p class="text-sm text-gray-400 mt-0">ATENEO DE DAVAO UNIVERSITY</p>
+              </div>
+            </div>
             <nav role="navigation">
-                <ul>
-                    <li><a href="./enrollment.html">MY ENROLLMENT</a></li>
-                    <li><a href="./grades.html">MY GRADES</a></li>
-                    <li><a href="./submit.html">MY SUBMISSION</a></li>
-                    <li><a href="./list.html">CLASS LIST</a></li>
+                <ul class="flex space-x-4">
+                    <li><a href="./enrollment.html" class="text-white hover:text-blue-700">MY ENROLLMENT</a></li>
+                    <li><a href="./grades.html" class="text-white hover:text-blue-700">MY GRADES</a></li>
+                    <li><a href="./submit.html" class="text-white hover:text-blue-700">MY SUBMISSION</a></li>
+                    <li><a href="./list.html" class="text-white hover:text-blue-700">CLASS LIST</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <table id="table">
-        <tr>
-          <th>Code</th>
-          <th>Student Name</th>
-          <th>Final</th>
-          <th>Grade Type</th>
-          <th>Year Lvl</th>
-          <th>Acad Status</th>
-          <th>Year of Entry</th>
-          <th>Entry Year Lvl</th>
-        </tr>
-  
-        <tr>
-          <td>142608</td>
-          <td>Dagatan, Raphael Miguel D.</td>
-          <td>
-            <select class="grade-dropdown">
-                <option value="" selected disabled></option>
-                <option value="A">A</option>
-                <option value="B+">B+</option>
-                <option value="B">B</option>
-                <option value="C+">C+</option>
-                <option value="C">C</option>
-                <option value="D">D</option>
-                <option value="F">F</option>
-                <option value="FD">FD</option>
-            </select>
-          </td>
-          <td>New</td>
-          <td>1</td>
-          <td>Regular</td>
-          <td>2022</td>
-          <td>1</td>
-        </tr>
-    </table>  
-      </table>  
+
+    <div class="container mx-auto my-8 px-4">
+        <table class="table-auto w-full border-collapse border border-gray-300 bg-white shadow-md rounded-md overflow-hidden text-center">
+            <thead class="bg-gray-200">
+                <tr>
+                    <th class="px-4 py-2">Code</th>
+                    <th class="px-4 py-2">Student Name</th>
+                    <th class="px-4 py-2">Final</th>
+                    <th class="px-4 py-2">Grade Type</th>
+                    <th class="px-4 py-2">Year Lvl</th>
+                    <th class="px-4 py-2">Acad Status</th>
+                    <th class="px-4 py-2">Year of Entry</th>
+                    <th class="px-4 py-2">Entry Year Lvl</th>
+                </tr>
+            </thead>
+            <tbody id="student-data">
+                <!-- Student data will be inserted here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+</html>
